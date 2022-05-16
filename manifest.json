@@ -15,6 +15,7 @@
     }
   ],
   "start_url": "./?utm_source=homescreen",
+  "id": "./?utm_source=homescreen",
   "display": "standalone",
   "dir": "ltr",
   "lang": "ja",
