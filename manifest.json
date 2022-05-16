@@ -1,0 +1,22 @@
+{
+  "name": "PWA Sample",
+  "short_name": "PWA",
+  "background_color": "#fc980c",
+  "icons": [
+    {
+      "src": "/image/icon_168x168.png",
+      "sizes": "168x168",
+      "type": "image/png"
+    },
+    {
+      "src": "/image/icon_192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./?utm_source=homescreen",
+  "display": "fullscreen",
+  "dir": "ltr",
+  "lang": "ja",
+  "orientation": "landscape",
+}
