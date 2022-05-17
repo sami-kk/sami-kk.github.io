@@ -16,7 +16,7 @@
   ],
   "start_url": "./?utm_source=homescreen",
   "id": "./?utm_source=homescreen",
-  "display": "standalone",
+  "display": "fullscreen",
   "dir": "ltr",
   "lang": "ja",
   "orientation": "landscape"
