@@ -3,12 +3,22 @@
 <head>
   <!-- manifest.jsonを呼び出しています -->
   <link rel="manifest" href="./manifest.json">
+  <!-- iOS用フルスクリーン設定 -->
   <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- Android用フルスクリーン設定 -->
+  <meta name="mobile-web-app-capable" content="yes">
   <script>
     // service workerが有効なら、service-worker.js を登録します
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('./service-worker.js').then(function() { console.log('Service Worker Registered'); });
    }
+    function fullscreen() {
+      const doc = window.document;
+      const docEl = (element === null)?  doc.documentElement:element;
+      let requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+      requestFullScreen.call(docEl);
+    }
+    window.onload = fullscreen;
   </script>
   <title>Hello PWA.</title>
   <style>
